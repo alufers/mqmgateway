@@ -4,6 +4,9 @@
 
 #include "exceptions.hpp"
 
+// std::stack
+#include <stack>
+
 namespace modmqttd {
 
 ConverterSpecification
