@@ -35,8 +35,7 @@ set_target_properties(modmqttsrv PROPERTIES SOVERSION 1)
 
 find_package(PkgConfig REQUIRED)
 find_package(yaml-cpp REQUIRED)
-message(STATUS "Found yaml-cpp: ${yaml-cpp_FOUND}")
-message(STATUS " YAML_CPP_LIBRARIES: ${YAML_CPP_LIBRARIES}")
+
 pkg_check_modules(Mosquitto IMPORTED_TARGET libmosquitto REQUIRED)
 
 target_link_libraries(modmqttsrv 
